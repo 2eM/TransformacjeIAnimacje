@@ -42,3 +42,41 @@
     position:relative;
     z-index:1;
 }
+
+#skalowany{
+    background-image: url('https://www.pets4homes.co.uk/images/breeds/43/81f6538eb4101d364ac0588b10040f0e.jpg');
+    background-size: cover ;
+    width:400px ;
+    height:400px;
+    display: inline-block;
+    transition:all 0.5s ;
+}
+
+#skalowany:hover{
+    transform:scale(1.5);
+}
+
+#skalowany_outer{
+    overflow:hidden;
+     width:400px ;
+    height:400px;   
+}
+
+#animowany{
+    width:400px ;
+    height:400px;
+    background-color: lightgreen ;
+    animation-name: changeWidth ;
+    animation-duration: 2s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes changeWidth{
+    from{
+      width:1000px  ;
+    }
+    to{
+       width:400px ; 
+    }
+}
