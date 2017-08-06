@@ -1,0 +1,44 @@
+#rotowany{
+    background-image: url('https://www.pets4homes.co.uk/images/breeds/43/81f6538eb4101d364ac0588b10040f0e.jpg');
+    background-size: cover ;
+        width:400px ;
+        height:400px;
+/* transform: rotate(20deg); */
+    
+    transition:all 0.2s ;
+        
+}
+
+#rotowany:hover{
+     transform: rotate(720deg);
+}
+
+#odsuwamy{
+    background-color: green ;
+         width:400px ;
+         height:400px;
+    display: inline-block;
+   
+/*
+    transform:translateX(100px);
+    transform:translateY(100px);
+*/
+    
+    
+     transition:all 0.2s ;
+}
+
+#odsuwamy:hover{
+    transform: translate(100px,100px);
+}
+
+#odsuwamy_2{
+    background-color: yellow ;
+     width:400px ;
+     height:400px;
+    display: inline-block;
+    
+/* przesuwanie pod sąsiada */
+    position:relative;
+    z-index:1;
+}
